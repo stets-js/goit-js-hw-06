@@ -15,3 +15,8 @@ const incr = () => {
 
 decrBtn.addEventListener("click", decr);
 incrBtn.addEventListener("click", incr);
+
+decrBtn.style.cssText =
+  "width: 50px; height: 50px; background: Coral; border-radius: 50%; border: none;";
+incrBtn.style.cssText =
+  "width: 50px; height: 50px; background: LightGreen; border-radius: 50%; border: none;";
