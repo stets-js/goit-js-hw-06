@@ -5,6 +5,6 @@ const titleSublist = categoriesCount.forEach((elem) => {
   console.log(
     `Category: ${elem.firstElementChild.textContent}` +
       `\n` +
-      `Elements: ${elem.lastElementChild.querySelectorAll("li").length}`
+      `Elements: ${elem.lastElementChild.children.length}`
   );
 });
