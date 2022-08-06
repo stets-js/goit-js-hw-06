@@ -21,7 +21,7 @@ function createBoxes(event) {
     customDivEl.setAttribute("height", `${firstSizeBoxes + x}px`);
     customDivEl.setAttribute(
       "style",
-      `backgroundColor: ${getRandomHexColor()}`
+      `background-color: ${getRandomHexColor()}`
     );
     parentDivEl.append(customDivEl);
   }
