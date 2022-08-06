@@ -9,9 +9,14 @@ function validateInput(event) {
     inputedText.classList.remove("valid");
     inputedText.classList.add("invalid");
     inputEl.style.backgroundColor = "pink";
-  } else {
+  }
+  if (inputedText.value.length === validatedLength) {
     inputedText.classList.remove("invalid");
     inputedText.classList.add("valid");
     inputEl.style.backgroundColor = "PaleGreen";
+  } else if (inputedText.value.length === 0) {
+    inputedText.classList.remove("invalid");
+    inputedText.classList.remove("valid");
+    inputEl.style.backgroundColor = "inherit ";
   }
 }
