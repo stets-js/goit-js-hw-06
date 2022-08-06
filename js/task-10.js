@@ -17,12 +17,9 @@ function createBoxes(event) {
     n += 1;
     x += 10;
     const customDivEl = document.createElement("div");
-    customDivEl.setAttribute("width", `${firstSizeBoxes + x}px`);
-    customDivEl.setAttribute("height", `${firstSizeBoxes + x}px`);
-    customDivEl.setAttribute(
-      "style",
-      `background-color: ${getRandomHexColor()}`
-    );
+    customDivEl.style.width = `${firstSizeBoxes + x}px`;
+    customDivEl.style.height = `${firstSizeBoxes + x}px`;
+    customDivEl.style.backgroundColor = `${getRandomHexColor()}`;
     parentDivEl.append(customDivEl);
   }
   console.log(parentDivEl);
